@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --primary-color: #047aed;
-  --secondary-color: #1c3fa8;
-  --dark-color: #002240;
+  --primary-color: #214252;
+  --secondary-color: #f05454;
+  --dark-color: #af2d2d;
   --light-color: #f4f4f4;
   --success-color: #5cb85c;
   --error-color: #d9534f;
@@ -52,12 +52,83 @@ pre {
   padding: 10px;
 }
 
+/* Header */
+.navigation{
+  background-color: var(--primary-color);
+  color:#fff;
+  padding:10px 0;
 
+  
+}
+.navigation .flex{
+  justify-content: space-between;
+}
 
+.navigation .container nav a{
+  padding:10px;
+  margin:20px;
+  color:#fff;
+}
 
+.navigation .container nav a:hover{
+  border-bottom:1px solid #fff;
+}
 
+/*showcase*/
+.showcase {
+  height:450px;
+  position: relative;
+}
 
+.showcase .grid{
+  grid-template-columns: 55% 45%;
+  overflow: visible;
+  grid-gap:30px;
+}
 
+.showcase .grid .form{
+  justify-self: flex-end;
+  width:330px;
+  height:350px;
+  position: relative;
+  top:60px;
+  z-index: 1000;
+}
+.showcase .grid .form form{
+  padding:5px;
+}
+
+.showcase .grid .form .form-input input{
+  border:none;
+  outline:none;
+  margin:20px 0;
+  padding-bottom:10px;
+  border-bottom:1px solid #f4f4f4;
+  width:100%;
+}
+
+.showcase::before,
+.showcase::after{
+  content: '';
+  position: absolute;
+  height:100px;
+  bottom:-70px;
+  left:0;
+right:0;
+  background:#fff;
+  transform:skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase .showcase-text {
+  animation:slideInFromLeft 1s ease-in;
+}
+
+.showcase .form{
+  animation:slideInFromRight 1s ease-in;
+}
 
 
 /* Responsive */
