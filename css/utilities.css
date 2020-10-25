@@ -83,6 +83,10 @@
   .text-light {
     color: var(--light-color);
   }
+
+  .text-focused{
+    font-weight:bold;
+  }
   
   /* Text sizes */
   .lead {

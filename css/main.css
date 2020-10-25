@@ -76,7 +76,7 @@ pre {
 
 /*showcase*/
 .showcase {
-  height:450px;
+  height:370px;
   position: relative;
 }
 
@@ -88,15 +88,16 @@ pre {
 
 .showcase .grid .form{
   justify-self: flex-end;
-  width:330px;
+  width:350px;
   height:350px;
   position: relative;
-  top:60px;
+  top:50px;
   z-index: 1000;
+  padding:30px;
 }
 .showcase .grid .form form{
   padding:5px;
-}
+} 
 
 .showcase .grid .form .form-input input{
   border:none;
@@ -128,6 +129,13 @@ right:0;
 
 .showcase .form{
   animation:slideInFromRight 1s ease-in;
+}
+
+/* Stats */
+.stats{
+  margin-top:6rem;
+  text-align: center;
+ animation:slideInFromBottom 1s ease-in;
 }
 
 
