@@ -217,15 +217,26 @@ pre {
 /* Features */
 
 /* Hero */
+.hero .hero-text{
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.hero .grid{
+  overflow: visible;
+}
+
 .hero img {
   width:40%;
   justify-self: end;
+  animation: slideInFromRight 1s ease-in;
 }
 
 /* Hero 2*/
 .hero-2 img{
   width: 60%;
   justify-self: end;
+
+
 }
 
 .hero-2{
@@ -249,6 +260,35 @@ pre {
 .features .container>*:nth-child(2){
   grid-column: 1/ span 2;
 }
+
+/* DOCS */
+.docs .grid{
+  grid-template-columns: 35% 65%;
+  align-items: start;
+}
+
+.docs .grid .card-navigation{
+  background: #f4f4f4;
+}
+
+.docs .grid .card-navigation h1{
+  font-weight: bold;
+  padding-top:1rem;
+}
+.docs .grid .card-navigation li{
+  margin:0.8rem 0;
+  padding:0.2rem 0;
+  border-bottom:1px solid #dcdcdc;
+}
+.docs .grid .card-intro h2{
+  font-size:20px;
+  font-weight:bold;
+  margin:1.3rem 0;
+}
+
+
+
+
 /* Footer */
 .footer .social i{
   margin:0 10px;
@@ -300,6 +340,7 @@ pre {
     justify-self: center;
     margin: auto;
     padding:1rem 0;
+    width:80%;
   }
 
   .features .grid {
@@ -308,6 +349,10 @@ pre {
 
   .features .container .card{
    margin-top:2rem;
+  }
+
+  .docs .grid{
+    grid-template-columns: 1fr;
   }
 
   .menu-btn{
