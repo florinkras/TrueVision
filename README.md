@@ -1,4 +1,4 @@
 # Fake cloud hosting website 
 
-# Live Preview
+Live Preview
 https://loruki1.netlify.app/
